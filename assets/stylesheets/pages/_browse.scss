@@ -36,6 +36,26 @@
       }
     }
     
+    #context-menu-container {
+     
+      > #context-menu {
+        top: 40px !important; // override inline
+        left: 5% !important; // override inline
+        width: 90%;  
+        
+        .action {
+          border-top: 1px solid #EDF1F5; 
+          
+          &:first-child {
+            border-top: 0px; 
+          }
+        }
+        
+      } 
+      
+    }
+    
+    
   }
 }
 
