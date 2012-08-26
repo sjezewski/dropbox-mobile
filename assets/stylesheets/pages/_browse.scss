@@ -44,11 +44,24 @@
         width: 90%;  
         
         .action {
-          border-top: 1px solid #EDF1F5; 
           
-          &:first-child {
-            border-top: 0px; 
+          &:last-child > label{
+            border-bottom: 0px; 
           }
+          
+          label {
+            border-bottom: 1px solid #EDF1F5;  
+            display:block;
+            
+            
+            // Disable actions we can't support            
+            &[for='download_button'] {
+              display: none; 
+            }
+            
+          }
+          
+          
         }
         
       } 
