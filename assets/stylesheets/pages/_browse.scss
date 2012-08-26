@@ -1,0 +1,41 @@
+// Acct info / sidebar
+#page-header, #page-sidebar {
+  display: none;
+}
+
+// Advanced features
+#browse-header {
+  #browse-global-actions-bar, #browse-root-actions {
+    display: none;
+  }
+  // #browse-sort
+}
+
+
+// Override Styles:
+
+    
+#outer-frame {
+  margin: 0px; //!auto
+  width: 100%; //!constant
+  #page-content {
+    padding-left: 0px; //!some amt
+    
+    
+    #browse-box{
+      margin: 0px; //~ -1px
+      #browse-header {
+        position: relative; // !fixed  
+        top: 0px; // !constant
+        width: auto; // !constant
+        min-height: 0px; // !constant
+      } 
+      
+      #browse-files {
+        padding:0px; //!constant 
+      }
+    }
+    
+  }
+}
+
