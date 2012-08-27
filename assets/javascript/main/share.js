@@ -17,6 +17,8 @@ function linkPrompt(root) {
         window.setTimeout(focusOnLink, 100);
       }
   );
+
+	focusOnLink();
 }
 
 window.addEventListener(
@@ -35,7 +37,12 @@ window.addEventListener(
 						}						
 					}
 				);
-        setTimeout(focusOnLink,150);
+        setTimeout(
+					function() {
+						linkPrompt(x$("#shmodal-title")[0]);
+					},
+					150
+				);
 
       }
     );
