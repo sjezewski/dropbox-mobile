@@ -1,0 +1,21 @@
+$mw-url: url("http://localhost:3003/images/mw.png");
+
+$mw-width: 30px;
+$mw-height: 42px;
+
+$mw-plus-x: 0px;
+$mw-plus-y: 0px;
+$mw-plus-width: 30px;
+$mw-plus-height: 42px;
+
+@mixin mw-plus() {
+  background: url("http://localhost:3003/images/mw.png") no-repeat 0px 0px;
+  width: 30px;
+  height: 42px;
+}
+
+.mw-plus {
+  background: url("http://localhost:3003/images/mw.png") no-repeat 0px 0px;
+  width: 30px;
+  height: 42px;
+}
