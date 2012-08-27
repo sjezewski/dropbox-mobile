@@ -6,6 +6,6 @@ match($path, /^\/search\/warmup|^\/jse|^\/fb\/post|^\/web_timing_log|^\/add_spri
 	$content_type = "text/plain"
 }
 
-match($path, /^\/cmd\/new[\/\?]?|^\/get_contacts[\/\?]?|^\/cmd\/delete[\/\?]?|^\/cmd\/rollback[\/\?]?/) {
+match($path, /^\/cmd\/(new|delete|rollback|copy|move|rename)[\/\?]?|^\/get_contacts[\/\?]?/) {
 	$content_type = "aaplication/json"
 }
