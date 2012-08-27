@@ -13,4 +13,6 @@ project.gemspec
 assets/javascript/.remote/
 assets/javascript/main.js
 assets/javascript/host_map.js
+assets/stylesheets/globals/_mw.scss
+assets/images/mw.png
 *.css
