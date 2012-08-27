@@ -1,4 +1,15 @@
 .mw_file_preview {
+
+  #download-menu-button, #download_button_link {
+    display: none !important;
+  }
+  .mw_header_filename {
+    margin: 10px;
+  }
+  .mw_top_changed {
+    top: 70px !important;
+  }
+
   #content-wrapper {
     width: 100%;
     margin: 0px;
@@ -108,23 +119,6 @@
     padding: 30px 10px 10px 10px;
   }
 
-
-  .mw_next_line {
-    width: 100%;
-    /*position: relative;*/
-    position: fixed;
-    top: 47px;
-    right: 0px;
-    border-bottom: 1px solid #aeceef;
-    @include box-shadow(0px 0px 4px #ccc);
-    @include display-box;
-    @include box-align(center);
-    @include box-pack(center);
-    @include box-orient(horizontal);
-    a {
-      margin: 10px 0px;
-    }
-  }
   .nav-header .shmodel-filename{
     overflow: hidden;
     white-space: nowrap;
