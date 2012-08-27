@@ -35,19 +35,28 @@
       margin-top: -10px;
       display: block;
     }
-        
+
   }
-  
+
   .browse-file .mw-menu-button {
-    display: block;
+    /*display: block;
     width: 20px;
-    height: 20px;      
-    background: blue;
+    height: 30px;
+    @include background-image(url("/images/plus.png"));
+    @include background-size(100%);
     position: absolute;
-    right: 40px;
-    top: 25px;
-  }  
-  
+    right: 42px;
+    top: 23px;*/
+    display: block;
+    width: 40px;
+    height: 40px;
+    @include background-image(url("/images/refine2_plus.png"));
+    @include background-size(100%);
+    position: absolute;
+    right: 35px;
+    top: 14px;
+  }
+
   #browse-location {
     font-size: 18px;
     /*overflow: hidden;
