@@ -6,7 +6,7 @@ $login_url {
 }
 
 $landing_url = "https://www.dropbox.com/home"
-$login_url {
+$landing_url {
   rewrite("link")
 }
 
