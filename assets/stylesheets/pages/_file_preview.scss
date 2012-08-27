@@ -110,16 +110,25 @@
 
 
   .mw_next_line {
-    position: relative;
-    padding: 10px;
-    top: 0px;
+    width: 100%;
+    /*position: relative;*/
+    position: fixed;
+    top: 47px;
     right: 0px;
-    border-top: 1px solid #aeceef;
+    border-bottom: 1px solid #aeceef;
     @include box-shadow(0px 0px 4px #ccc);
     @include display-box;
     @include box-align(center);
     @include box-pack(center);
     @include box-orient(horizontal);
+    a {
+      margin: 10px 0px;
+    }
+  }
+  .nav-header .shmodel-filename{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   &.mw_long_header {
