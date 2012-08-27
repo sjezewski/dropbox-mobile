@@ -1,74 +1,123 @@
-// Acct info / sidebar
-#page-header, #page-sidebar {
-  display: none;
-}
+.mw_browse {
 
-// Advanced features
-#browse-header {
-  #browse-global-actions-bar, #browse-root-actions {
+  a#kind-sorter, a#modified-sorter {
+    display: none !important;
+  }
+  .browse-file .kind, .title_bubble_container {
     display: none;
   }
-  // #browse-sort
-}
-
-
-// Override Styles:
-
-    
-#outer-frame {
-  margin: 0px; //!auto
-  width: 100%; //!constant
-  #page-content {
-    padding-left: 0px; //!some amt
-    
-    
-    #browse-box{
-      margin: 0px; //~ -1px
-      #browse-header {
-        position: relative; // !fixed  
-        top: 0px; // !constant
-        width: auto; // !constant
-        min-height: 0px; // !constant
-      } 
-      
-      #browse-files {
-        padding:0px; //!constant 
-      }
-    }
-    
-    #context-menu-container {
-     
-      > #context-menu {
-        top: 40px !important; // override inline
-        left: 5% !important; // override inline
-        width: 90%;  
-        
-        .action {
-          
-          &:last-child > label{
-            border-bottom: 0px; 
-          }
-          
-          label {
-            border-bottom: 1px solid #EDF1F5;  
-            display:block;
-            
-            
-            // Disable actions we can't support            
-            &[for='download_button'] {
-              display: none; 
-            }
-            
-          }
-          
-          
-        }
-        
-      } 
-      
-    }
-    
-    
+  .selected #browse-sort {
+    display: block;
   }
+  .filename-col {
+    width: 100% !important;
+    float: none !important;
+    img {
+      margin-top: 10px;
+    }
+  }
+  .browse-file .modified {
+    font-size: 11px;
+    line-height: 18px;
+    &:before {
+      content: "Modified: ";
+    }
+    .shmodel-file.title_bubble {
+      top: 50%;
+      margin-top: -10px;
+    }
+  }
+  #browse-location {
+    font-size: 18px;
+    /*overflow: hidden;
+    text-overflow: ellipsis;*/
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  #browse-rightmenu {
+    display: none;
+  }
+  #browse-global-actions-bar {
+    margin-top: 10px;
+  }
+
+
+  // Acct info / sidebar
+  #page-header, #page-sidebar {
+    display: none;
+  }
+
+  // Advanced features
+  #browse-header {
+    #browse-root-actions {
+      display: none;
+    }
+    // #browse-sort
+  }
+
+
+  // Override Styles:
+
+
+  #outer-frame {
+    margin: 0px; //!auto
+    width: 100%; //!constant
+    #page-content {
+      padding-left: 0px; //!some amt
+
+
+      #browse-box{
+        margin: 0px; //~ -1px
+        #browse-header {
+          position: relative; // !fixed
+          top: 0px; // !constant
+          width: auto; // !constant
+          min-height: 0px; // !constant
+        }
+
+        #browse-files {
+          padding:0px; //!constant
+        }
+      }
+
+      #context-menu-container {
+
+        > #context-menu {
+          top: 40px !important; // override inline
+          left: 5% !important; // override inline
+          width: 90%;
+
+          .action {
+
+            &:last-child > label{
+              border-bottom: 0px;
+            }
+
+            label {
+              border-bottom: 1px solid #EDF1F5;
+              display:block;
+
+
+              // Disable actions we can't support
+              &[for='download_button'] {
+                display: none;
+              }
+
+            }
+
+
+          }
+
+        }
+
+      }
+
+
+    }
+  }
+
+
+
 }
 

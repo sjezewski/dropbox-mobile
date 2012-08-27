@@ -2,3 +2,6 @@
 // What shouldn't go here
 //   - global declartive classes, mixins, or variables, that goes in -lib.scss
 
+body {
+  font-family: $lucida-grande;
+}
