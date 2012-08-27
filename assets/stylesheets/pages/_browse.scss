@@ -106,12 +106,19 @@
   }
   #modal-title {
     font-size: 16px;
+    > div {
+      line-height: 24px;
+      margin-left: 38px;
+      > img.sprite {
+        margin-left: -38px;
+      }
+    }
   }
 
   #shared-folder-wizard > div, #new_folder_name {
     width: auto !important;
   }
-  #invite-more-wizard .fb-connect-link {
+  #invite-more-wizard .fb-connect-link, #invite-more-form .fb-connect-link {
     position: relative;
     top: 0px;
     right: 0px;
