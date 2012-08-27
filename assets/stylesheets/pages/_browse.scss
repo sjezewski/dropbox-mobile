@@ -93,6 +93,42 @@
     padding-top: 10px;
   }
 
+  #modal {
+    width: auto !important;
+    margin: 0px 10px !important;
+    left: 0;
+    right: 0;
+    top: 50px !important;
+  }
+  #modal-box {
+    padding: 30px 10px 10px 10px;
+  }
+  #modal-title {
+    font-size: 16px;
+  }
+
+  #shared-folder-wizard > div, #new_folder_name {
+    width: auto !important;
+  }
+  #invite-more-wizard .fb-connect-link {
+    position: relative;
+    top: 0px;
+    right: 0px;
+  }
+  #invite-more-wizard #custom-message-wizard {
+    width: 262px !important;
+  }
+  #allow-members-table {
+    width: 100% !important;
+    margin-bottom: 10px;
+    td {
+      display: block;
+    }
+  }
+  #allow-other-members-to-share-container {
+    margin: 10px 0px;
+  }
+
 
   // Acct info / sidebar
   #page-header, #page-sidebar {
