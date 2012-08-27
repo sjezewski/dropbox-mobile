@@ -145,15 +145,6 @@
       }*/
       display: none;
     }
-    .freshtoggle {
-      /*margin: 10px 0px;*/
-      &.middle {
-        margin: 0px 10px;
-      }
-      &:hover {
-        border: none;
-      }
-    }
     #tokenized_autocompleter_container .textinput {
       width: 271px !important;
     }
