@@ -35,6 +35,21 @@
         padding:0px; //!constant 
       }
     }
+
+    #context-mask {
+      display: none;
+
+      &.visible {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #AAA;
+        opacity: 0.8;
+        z-index:5;
+        top:0px;
+        display: block;
+      }
+    }
     
     #context-menu-container {
      
@@ -42,6 +57,7 @@
         top: 40px !important; // override inline
         left: 5% !important; // override inline
         width: 90%;  
+        z-index:6;
         
         .action {
           

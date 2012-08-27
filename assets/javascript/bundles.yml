@@ -2,5 +2,6 @@
 - :output_file: main.js
   :input_directory: main
   :input_files:
-  - host_map.js
+    - http://d1topzp4nao5hp.cloudfront.net/uranium-upload/0.1.95/uranium-pretty.js
+    - host_map.js
 
