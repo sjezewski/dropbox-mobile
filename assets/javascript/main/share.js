@@ -6,9 +6,10 @@ function focusOnLink() {
   }
 }
 
-function linkPrompt(root) {
+function linkPrompt() {
+	var root = x$("#shmodal-title");
 	var link = x$('#mw_link_prompt_container')[0];
-	var title = x$(root).find("#shmodal-title-text");
+	var title = root.find("#shmodal-title-text");
 	title.before(link.innerHTML);
 
   x$(link).on(
@@ -28,21 +29,15 @@ window.addEventListener(
     x$("body.mw_file_preview").each(
       function(b) {
         
-        x$(".freshbutton-blue").on("click", focusOnLink);
 				window.addEventListener(
 					'DOMNodeInserted',
 					function(e) {						
 						if(e.target.id == "shmodal-title") {
-							linkPrompt(e.target);
+						  setTimeout(linkPrompt,150);
 						}						
 					}
 				);
-        setTimeout(
-					function() {
-						linkPrompt(x$("#shmodal-title")[0]);
-					},
-					150
-				);
+        setTimeout(linkPrompt,150);
 
       }
     );
