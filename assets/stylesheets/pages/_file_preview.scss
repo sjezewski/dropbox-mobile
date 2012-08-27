@@ -1,5 +1,12 @@
 .mw_file_preview {
 
+  .mw_create_acc {
+    padding: 10px;
+    border-bottom: 1px solid #AECEEF;
+    @include box-shadow(0px 0px 4px #ccc);
+    text-align: center;
+  }
+
   #download-menu-button, #download_button_link {
     display: none !important;
   }
@@ -11,8 +18,11 @@
     margin: 10px;
     line-height: 24px;
   }
-  .mw_top_changed {
+  .mw_top_changed:not(.mw_top_changed_2) {
     top: 70px !important;
+  }
+  .mw_top_changed_2 {
+    top: 120px !important;
   }
 
   #content-wrapper {
@@ -27,6 +37,12 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+  }
+
+  .fb-connect-link {
+    position: relative !important;
+    top: -5px !important;
+    right: 0px !important;
   }
   .list-view-cols {
     .filesize-col {
@@ -60,7 +76,7 @@
   .modified-time:before {
     content: "Modified: ";
   }
-  #gallery-view-media, #gallery-view-folders {
+  #gallery-view-media, #gallery-view-folders, #gallery-view-files {
     margin: 10px;
   }
   #gallery-view-media {
