@@ -72,10 +72,25 @@
 	  display:none;    
     }
 
+	#mw_link_prompt_container {
+	  display: none;
+	}
+
 	#mw_link_prompt{
 		padding: 0px 0px 10px 10px;
 		border-bottom: 1px solid #AAA;
 		margin-bottom: 10px;
+		
+		#mw_share_link {
+		  position: relative;
+		  left: -40px;
+		}
+		
+		label[for='mw_share_link'] {
+		  float:left;
+		}
+		
+		
 	}
 
     #shmodal-title-text {

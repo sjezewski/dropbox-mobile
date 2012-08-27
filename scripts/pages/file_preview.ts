@@ -32,11 +32,13 @@ $("/html/body") {
   }
   
   $(".//div[@id='modal-content']") {
-    insert_before("div", id: "mw_link_prompt") {
-      insert("label", for: "mw_share_link") {
-        text("Copy Link:")
+    insert_before("div", id: "mw_link_prompt_container") {
+      insert("div", id: "mw_link_prompt") {
+        insert("label", for: "mw_share_link") {
+          text("Copy Link:")
+        }
+        insert("input", id: "mw_share_link", type: "text", value: $link) 
       }
-      insert("input", id: "mw_share_link", type: "text", value: $link) 
     }
   }
 
