@@ -1,0 +1,38 @@
+$mw-url: url("http://localhost:3003/images/mw.png");
+
+$mw-width: 30px;
+$mw-height: 60px;
+
+$mw-gear-x: 0px;
+$mw-gear-y: 0px;
+$mw-gear-width: 16px;
+$mw-gear-height: 18px;
+
+$mw-plus-x: 0px;
+$mw-plus-y: -18px;
+$mw-plus-width: 30px;
+$mw-plus-height: 42px;
+
+@mixin mw-gear() {
+  background: url("http://localhost:3003/images/mw.png") no-repeat 0px 0px;
+  width: 16px;
+  height: 18px;
+}
+
+@mixin mw-plus() {
+  background: url("http://localhost:3003/images/mw.png") no-repeat 0px -18px;
+  width: 30px;
+  height: 42px;
+}
+
+.mw-gear {
+  background: url("http://localhost:3003/images/mw.png") no-repeat 0px 0px;
+  width: 16px;
+  height: 18px;
+}
+
+.mw-plus {
+  background: url("http://localhost:3003/images/mw.png") no-repeat 0px -18px;
+  width: 30px;
+  height: 42px;
+}

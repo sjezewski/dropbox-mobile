@@ -39,11 +39,12 @@
   }
 
   .browse-file .mw-menu-button {
-	@include mw-plus();
+    // @include mw-plus();
+    @extend .mw-gear;
     display: block;
     position: absolute;
-    right: 35px;
-    top: 14px;
+    right: 45px;
+    top: 28px;
   }
 
   #browse-location {
@@ -152,7 +153,8 @@
     width: 100%; //!constant
     #page-content {
       padding-left: 0px; //!some amt
-
+      min-height:0px;
+      padding-bottom: 0px;
 
       #browse-box{
         margin: 0px; //~ -1px
@@ -218,8 +220,10 @@
 
     }
   }
-
-
-
+  #mw_log_out {
+    display: block;
+    padding: 10px;
+    text-align: right;
+  }
 }
 
