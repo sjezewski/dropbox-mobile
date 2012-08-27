@@ -22,21 +22,23 @@ function addMenuButton(file) {
 window.addEventListener(
   'DOMNodeInserted',
   function(e) {
-    var file = x$(e.target);
-    if (file.hasClass('browse-file') ) {
-      addMenuButton(file[0]);
+    var elem = x$(e.target);
+    if (elem.hasClass('browse-file') ) {
+      addMenuButton(elem[0]);
     }    
+    if (elem[0] !== undefined && elem[0].id == "context-menu") {
+      elem.on('click', hideMask);
+    }
   }
 );
+
+function hideMask() {
+  x$("#context-mask").removeClass("visible");  
+}
 
 window.addEventListener(
   'DOMContentLoaded',
   function(e) {
-    x$("#context-mask").on(
-      'click',
-      function(e) {
-        x$(e.target).removeClass("visible");
-      } 
-    );
+    x$("#context-mask").on('click',hideMask);
   }
 );
