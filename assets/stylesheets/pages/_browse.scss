@@ -26,7 +26,19 @@
       top: 50%;
       margin-top: -10px;
     }
+        
   }
+  
+  .browse-file .mw-menu-button {
+    display: block;
+    width: 20px;
+    height: 20px;      
+    background: blue;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+  }  
+  
   #browse-location {
     font-size: 18px;
     /*overflow: hidden;
