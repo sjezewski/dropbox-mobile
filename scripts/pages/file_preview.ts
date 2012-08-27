@@ -19,6 +19,9 @@ $("/html/body") {
       }
     }
   }
+  $(".//a[@class = 'fb-connect-link']") {
+    move_to("./ancestor::div[@id = 'shmodal-send-form-inputs']", "top")
+  }
 
 
   # Long URL:

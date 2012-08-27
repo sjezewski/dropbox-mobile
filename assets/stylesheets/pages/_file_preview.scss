@@ -38,6 +38,12 @@
     white-space: nowrap;
     overflow: hidden;
   }
+
+  .fb-connect-link {
+    position: relative !important;
+    top: -5px !important;
+    right: 0px !important;
+  }
   .list-view-cols {
     .filesize-col {
       width: 50%;
@@ -70,7 +76,7 @@
   .modified-time:before {
     content: "Modified: ";
   }
-  #gallery-view-media, #gallery-view-folders {
+  #gallery-view-media, #gallery-view-folders, #gallery-view-files {
     margin: 10px;
   }
   #gallery-view-media {
