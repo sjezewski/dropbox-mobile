@@ -3,8 +3,13 @@
   #download-menu-button, #download_button_link {
     display: none !important;
   }
+  #owner-menu {
+    left: -100px;
+    width: auto;
+  }
   .mw_header_filename {
     margin: 10px;
+    line-height: 24px;
   }
   .mw_top_changed {
     top: 70px !important;
@@ -88,20 +93,26 @@
 	}
 
 	#mw_link_prompt{
-		padding: 0px 0px 10px 10px;
-		border-bottom: 1px solid #AAA;
+		padding-bottom: 10px;
+    padding-top: 10px;
+		border-bottom: 1px solid #BFBFBF;
 		margin-bottom: 10px;
-		
+
 		#mw_share_link {
 		  position: relative;
-		  left: -40px;
+		  /*left: -40px;*/
+      width: auto;
+      border: 1px solid #BFBFBF;
+      border-radius: 3px;
+      padding: 4px;
 		}
-		
+
 		label[for='mw_share_link'] {
 		  float:left;
+      font-size: 16px;
+      display: block;
+      margin: 7px 0;
 		}
-		
-		
 	}
 
     #shmodal-title-text {
@@ -119,9 +130,9 @@
       display: none;
     }
     .freshtoggle {
-      margin: 10px 0px;
+      /*margin: 10px 0px;*/
       &.middle {
-        margin: 10px;
+        margin: 0px 10px;
       }
       &:hover {
         border: none;
