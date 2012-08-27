@@ -30,8 +30,16 @@ match($status) {
         log("--> Importing pages/browse.ts in mappings.ts")
         @import pages/browse.ts
       }
+      with(/^\/s\/?/) {
+        # log("--> Importing pages/share.ts in mappings.ts")
+        # @import pages/share.ts
+        $("/html/body[contains(@class, 'shmodel-body')]") {
+          log("--> Importing pages/file_preview.ts in mappings.ts")
+          @import pages/file_preview.ts
+        }
+      }
       else() {
-        $("/html/body[contains(@class, 'file-preview-body')]") {
+        $("/html/body[contains(@class, 'shmodel-body')]") {
           log("--> Importing pages/file_preview.ts in mappings.ts")
           @import pages/file_preview.ts
         }

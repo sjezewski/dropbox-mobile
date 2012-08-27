@@ -11,4 +11,8 @@ $("/html/body") {
     insert_after("div", id: 'context-mask')
   }
 
+  $(".//div[@id='browse-box']") {
+    insert_after("a", "Log Out", id: "mw_log_out", href: "/logout")
+  }
+
 }
