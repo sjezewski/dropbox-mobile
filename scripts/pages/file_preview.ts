@@ -23,10 +23,6 @@ $("/html/body") {
     move_to("./ancestor::div[@id = 'shmodal-send-form-inputs']", "top")
   }
 
-
-  # Long URL:
-  # $link = fetch(".//a[@id='download_button_link']/@href")
-
   # Short URL:
   $(".//a[@class='freshbutton-blue']") {
     attribute("onclick") {

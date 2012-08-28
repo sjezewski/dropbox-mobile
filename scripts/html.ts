@@ -5,7 +5,6 @@ $("/html") {
   absolutize_srcs()
   insert_mobile_meta_tags()
   
-  #  remove_all_styles()    
   add_assets()
 
   @import sections/header.ts
