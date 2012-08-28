@@ -26,9 +26,15 @@ window.addEventListener(
     if (elem.hasClass('browse-file') ) {
       addMenuButton(elem[0]);
     }    
-    if (elem[0] !== undefined && elem[0].id == "context-menu") {
-      elem.on('click', hideMask);
+    if (elem[0] !== undefined) {
+	    if (elem[0].id == "context-menu") {
+        elem.on('click', hideMask);
+      }
+		  if (elem.hasClass("wit_group")) {
+				window.scrollTo(0,1);
+			}
     }
+
   }
 );
 

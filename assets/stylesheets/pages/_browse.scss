@@ -1,4 +1,11 @@
 .mw_browse {
+  #folder-management-buttons {
+    height: auto;
+  }
+
+  #modal-box input{
+    -webkit-appearance: none !important; 
+  }
 
   a#kind-sorter, a#modified-sorter {
     display: none !important;
