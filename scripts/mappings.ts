@@ -31,8 +31,6 @@ match($status) {
         @import pages/browse.ts
       }
       with(/^\/s\/?/) {
-        # log("--> Importing pages/share.ts in mappings.ts")
-        # @import pages/share.ts
         $("/html/body[contains(@class, 'shmodel-body')]") {
           log("--> Importing pages/file_preview.ts in mappings.ts")
           @import pages/file_preview.ts

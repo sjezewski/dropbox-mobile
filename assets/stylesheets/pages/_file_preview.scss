@@ -183,4 +183,16 @@
       padding-top: 95px;
     }
   }
+
+  #tokenized_autocompleter_container {
+    margin-bottom: 10px;
+    .tokenizer {
+      @include border-radius(0px);
+    }
+  }
+
+  #modal #shmodal-send-content #shmodal-send-form #shmodal-send-form-inputs .custom-message-container textarea {
+    border-top: 1px solid #DDD;
+  }
+
 }
