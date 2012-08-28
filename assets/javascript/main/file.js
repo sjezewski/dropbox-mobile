@@ -3,7 +3,7 @@ function showMenu(elem) {
   mask.addClass('visible');
   mask.setStyle('height', document.body.offsetHeight + 'px');  
   var evt = document.createEvent('MouseEvents');
-  evt.initMouseEvent('contextmenu',true,false,window,1,10,10,10,10,false,false,false,false,2,elem);
+  evt.initEvent('contextmenu',true,false);
   elem.dispatchEvent(evt);
 }
 
