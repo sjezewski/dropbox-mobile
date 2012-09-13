@@ -45,6 +45,22 @@ body.mw_login {
     #remember-me {
       font-size: .8em;
     }
+    .error-bubble {
+      right: 0px;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .error-bubble-arrow-border {
+      border-color: #BA6262 transparent transparent transparent;
+      left: 50%;
+      top: 32px;
+    }
+    .error-bubble-arrow {
+      left: 50%;
+      top: 30px;
+      border-color: #FFF1F1 transparent transparent transparent;
+    }
   }
   .sick-input {
     label {
