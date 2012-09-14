@@ -207,5 +207,12 @@
   #modal #shmodal-send-content #shmodal-send-form #shmodal-send-form-inputs .custom-message-container textarea {
     border-top: 1px solid #DDD;
   }
-
+  .browse-file.list-view-cols:first-of-type {
+    border-top: none;
+  }
+  #list-view-container {
+    right: 0px;
+    left: 0px;
+    margin: 10px;
+  }
 }
