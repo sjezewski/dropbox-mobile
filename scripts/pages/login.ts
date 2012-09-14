@@ -14,4 +14,14 @@ $("./body") {
   $(".//div[@id='remember-me']") {
     move_to("./preceding-sibling::input", "before")
   }
+
+  #add placeholders
+  $(".//div[@id='login-partial']") {
+    $(".//input[@id='login_email']") {
+      attributes(placeholder: "Email")
+    }
+    $(".//input[@id='login_password']") {
+      attributes(placeholder: "Password")
+    }
+  }
 }

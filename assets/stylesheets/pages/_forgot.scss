@@ -1,0 +1,40 @@
+.mw_forgot {
+  #forgot-form {
+    width: 100%;
+    > p {
+      margin: 10px 0;
+    }
+  }
+  .sick-input input {
+    width: 100% !important;
+    height:36px;
+    margin: 10px 0;
+  }
+  .sick-input label {
+    display: none;
+  }
+  h2 {
+    margin: 20px 0;
+  }
+
+  * {
+    @include box-sizing(border-box);
+  }
+  #outer-frame {
+    min-width:100%;
+    padding: 10px;
+  }
+  #page-logo-header {
+    margin-top: 0px;
+  }
+  #header-border-div {
+    margin: 5px 0 0 0;
+  }
+  #outer-frame {
+    width: auto;
+  }
+  #page-content {
+    min-height: 0px;
+  }
+
+}

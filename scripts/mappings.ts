@@ -30,6 +30,10 @@ match($status) {
         log("--> Importing pages/browse.ts in mappings.ts")
         @import pages/browse.ts
       }
+      with(/^\/forgot/) {
+        log("--> Importing pages/forgot.ts in mappings.ts")
+        @import pages/forgot.ts
+      }
       else() {
         $("/html/body[contains(@class, 'shmodel-body')]") {
           log("--> Importing pages/file_preview.ts in mappings.ts")
