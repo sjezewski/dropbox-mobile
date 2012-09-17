@@ -2,7 +2,7 @@ $content_type
 
 # Repair content-types by path. They don't set the content-type properly
 
-match($path, /^\/search\/warmup|^\/jse|^\/fb\/post|^\/web_timing_log|^\/add_sprites_used|^\/shmlog|^\/google\/have_user/) {
+match($path, /^\/search\/warmup|^\/jse|^\/fb\/post|^\/web_timing_log|^\/add_sprites_used|^\/shmlog|^\/google\/have_user|^\/share_ajax\/(kick_user|change_sf_owner)/) {
 	$content_type = "text/plain"
 }
 
